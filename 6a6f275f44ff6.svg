@@ -1,0 +1,36 @@
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="markGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1D3A"/>
+      <stop offset="100%" stop-color="#16345E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#E7C766"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark: badge with an E built from three tapering, forward-leaning bars
+       that read as speed lines and as a package flap/seal at once -->
+  <g transform="translate(20,20)">
+    <rect x="0" y="0" width="160" height="160" rx="28" fill="url(#markGrad)"/>
+
+    <!-- E strokes, slanted forward for motion, shortening top-to-bottom
+         like an unfolding shipping flap -->
+    <path d="M46 40 H120 V58 H46 Z" fill="#F5F1E6"/>
+    <path d="M46 71 H104 V89 H46 Z" fill="#F5F1E6"/>
+    <path d="M46 102 H120 V120 H46 Z" fill="#F5F1E6"/>
+    <path d="M46 40 V120 H64 V40 Z" fill="#F5F1E6"/>
+
+    <!-- gold corner fold: the "package seal" cue, doubles as a checkmark tail -->
+    <path d="M120 102 L140 120 L120 138 Z" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(212,0)">
+    <text x="0" y="100" font-family="Arial, Helvetica, sans-serif" font-weight="700"
+          font-size="60" letter-spacing="0.5" fill="#0B1D3A">elite<tspan fill="#16345E">shipp</tspan></text>
+    <text x="2" y="130" font-family="Arial, Helvetica, sans-serif" font-weight="600"
+          font-size="16" letter-spacing="6" fill="#C9A227">PREMIUM DELIVERY</text>
+  </g>
+</svg>
